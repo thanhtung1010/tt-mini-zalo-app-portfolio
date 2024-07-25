@@ -1,7 +1,7 @@
 {
   "cwd": "/Users/tung.trinh/Desktop/Project/Something-fun/tt-mini-zalo-app-portfolio",
   "newProject": true,
-  "name": "tt-mini-zalo-app-portfolio",
+  "name": "Zalo Mini App",
   "package": "zmp-ui",
   "framework": "react-typescript",
   "cssPreProcessor": "scss",

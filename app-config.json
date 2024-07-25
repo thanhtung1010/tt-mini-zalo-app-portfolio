@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "tt-mini-zalo-app-portfolio",
+    "title": "Zalo Mini App",
     "headerTitle": "tt-mini-zalo-app-portfolio",
     "headerColor": "#1843EF",
     "textColor": "white",
@@ -9,10 +9,13 @@
     "statusBar": "normal",
     "actionBarHidden": false,
     "hideAndroidBottomNavigationBar": false,
-    "hideIOSSafeAreaBottom": false
+    "hideIOSSafeAreaBottom": false,
+    "textAlign": "left",
+    "selfControlLoading": false
   },
   "debug": false,
   "listCSS": [],
   "listSyncJS": [],
-  "listAsyncJS": []
+  "listAsyncJS": [],
+  "template": {}
 }

@@ -1,4 +1,4 @@
-# tt-mini-zalo-app-portfolio
+# Zalo Mini App
 
 ## ZMP CLI Options
 
@@ -8,7 +8,7 @@ ZMP app created with following options:
 {
   "cwd": "/Users/tung.trinh/Desktop/Project/Something-fun/tt-mini-zalo-app-portfolio",
   "newProject": true,
-  "name": "tt-mini-zalo-app-portfolio",
+  "name": "Zalo Mini App",
   "package": "zmp-ui",
   "framework": "react-typescript",
   "cssPreProcessor": "scss",
