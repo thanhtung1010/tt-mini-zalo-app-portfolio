@@ -1,6 +1,7 @@
 import React from 'react';
 import { Avatar, Box, Text } from 'zmp-ui';
 import { userInfo } from 'zmp-sdk';
+// import { Card } from './card';
 
 interface UserProps{
   user: userInfo

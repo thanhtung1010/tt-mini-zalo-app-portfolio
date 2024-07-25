@@ -13,7 +13,7 @@ import UserCard from '../components/user-card';
 
 const HomePage:React.FunctionComponent = () => {
   const user = useRecoilValue<userInfo>(userState);
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   return (
     <Page  className="page">
     <div className="section-container">
@@ -22,10 +22,12 @@ const HomePage:React.FunctionComponent = () => {
     <div className="section-container">
     <List >
       <List.Item suffix={<Icon icon="zi-arrow-right"/>}>
-        <div  onClick={()=>navigate('/about')}>About</div>
+        {/* <div  onClick={()=>navigate('/about')}>About</div> */}
+        <div>About</div>
       </List.Item>
       <List.Item suffix={<Icon icon="zi-arrow-right"/>}>
-        <div onClick={()=>navigate('/user')}>User</div>
+        {/* <div onClick={()=>navigate('/user')}>User</div> */}
+        <div>User</div>
       </List.Item>
     </List>
     </div>
