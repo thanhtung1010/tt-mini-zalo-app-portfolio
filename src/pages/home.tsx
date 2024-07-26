@@ -3,20 +3,18 @@ import {
   List,
   Page,
   Icon,
-  useNavigate
 } from 'zmp-ui';
 import { useRecoilValue } from 'recoil';
 import { userInfo } from "zmp-sdk";
 import { userState } from '../state';
 import UserCard from '../components/user-card';
-import { OrderService } from '../services/order.service';
 
 export interface IBaseProd {
   id: number;
   name: string;
 }
 
-const HomePage: React.FunctionComponent = () => {
+export const HomePage: React.FunctionComponent = () => {
   const user = useRecoilValue<userInfo>(userState);
   const prods: IBaseProd[] = [
     {
@@ -28,23 +26,18 @@ const HomePage: React.FunctionComponent = () => {
       id: 2
     },
   ];
+  // const {children} = props;
   // const navigate = useNavigate()
-  const orderService = new OrderService().orderService;
-  let total: number = 0;
-  const addToCard = (id: number) => {
-    orderService.addToCard(id);
-    total = orderService.totalCard;
-  }
   return (
-    <Page className="page">
-      <div className="section-container">
+    <Page className="tt-page">
+      <div className="tt-section-container">
         <UserCard user={user} />
+        { 'home' }
       </div>
-      <div className="section-container">
-        {total}
+      <div className="tt-section-container">
         <List >
           {prods.map(prod =>
-            <List.Item key={prod.id} onClick={() => addToCard(prod.id)} suffix={<Icon icon="zi-arrow-right" />}>
+            <List.Item key={prod.id} suffix={<Icon icon="zi-arrow-right" />}>
               <div>{prod.name}</div>
             </List.Item>
           )}
@@ -61,5 +54,3 @@ const HomePage: React.FunctionComponent = () => {
     </Page>
   );
 }
-
-export default HomePage;

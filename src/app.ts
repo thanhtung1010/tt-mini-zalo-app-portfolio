@@ -2,10 +2,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-
-import 'zmp-ui/zaui.css'; 
-
-import './css/app.scss';
+import './assets/scss/main.scss';
 
 // Import App Component
 import App from './components/app';

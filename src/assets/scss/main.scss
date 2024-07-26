@@ -1,0 +1,15 @@
+@import 'zmp-ui/zaui.css'; 
+@import './variable.scss';
+
+.#{$mainCls} {
+  @import 'components/index.scss';
+
+  &-app {
+
+    * {
+      transition: all .3s ease;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  }
+}
