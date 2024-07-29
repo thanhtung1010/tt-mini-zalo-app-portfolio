@@ -1,29 +1,24 @@
 import React from 'react';
-import { Navigate, Route } from 'react-router-dom'
-import { App, ZMPRouter, AnimationRoutes, SnackbarProvider } from 'zmp-ui';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { RecoilRoot } from 'recoil';
-import { HomePage, SettingPage } from '../pages';
+import { ShopingPage, SettingPage } from '../pages';
 import PageLayout from './page-layout';
 
 const MyApp = () => {
   return (
     <RecoilRoot>
-      <App >
-        <SnackbarProvider>
-          <ZMPRouter>
-            <PageLayout>
-              <AnimationRoutes>
-                <Route path="/shoping" element={<HomePage></HomePage>}></Route>
-                <Route path="/setting" element={<SettingPage></SettingPage>}></Route>
-                <Route
-                  path="*"
-                  element={<Navigate to="/shoping" replace={true} />}
-                />
-              </AnimationRoutes>
-            </PageLayout>
-          </ZMPRouter>
-        </SnackbarProvider>
-      </App>
+      <BrowserRouter>
+        <PageLayout>
+          <Routes>
+            <Route path="/shoping" element={<ShopingPage></ShopingPage>}></Route>
+            <Route path="/setting" element={<SettingPage></SettingPage>}></Route>
+            <Route
+              path="*"
+              element={<Navigate to="/shoping" replace={true} />}
+            />
+          </Routes>
+        </PageLayout>
+      </BrowserRouter>
     </RecoilRoot>
   );
 }

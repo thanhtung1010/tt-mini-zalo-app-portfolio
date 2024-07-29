@@ -1,8 +1,6 @@
 &-navbar {
   height: $heightNavigationBar;
   background-color: $whiteColor;
-  position: sticky;
-  bottom: 0;
   display: flex;
   gap: 10px;
 
@@ -13,6 +11,7 @@
     align-items: center;
     border: none;
     background: transparent;
+    cursor: pointer;
 
     img {
       width: 25px;

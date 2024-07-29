@@ -24,6 +24,7 @@
         "namedComponents": "arrow-function"
       }
     ],
+    "react/prop-types": 0,
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "max-len": [

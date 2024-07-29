@@ -4,5 +4,6 @@ export * from './page-layout';
 export * from './user-card';
 export * from './setting-list';
 export * from './setting-list-item';
+export * from './container-prod';
 
 export * from './common'
