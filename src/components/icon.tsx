@@ -1,5 +1,5 @@
 import React from 'react';
-import { parseImgSrc } from '../../untils';
+import { parseImgSrc } from '../untils';
 
 export const Icon = (props) => {
   const {icon, height, width} = props;

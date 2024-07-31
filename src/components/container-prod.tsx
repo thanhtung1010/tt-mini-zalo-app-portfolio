@@ -1,6 +1,6 @@
 import React from 'react';
 import { IBaseProd } from '../pages';
-import { ProductItem } from './common';
+import { ProductItem } from '.';
 
 export const ContainerProduct = (props) => {
   const prod: IBaseProd = props.prod;

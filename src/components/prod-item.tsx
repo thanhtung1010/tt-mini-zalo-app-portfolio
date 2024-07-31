@@ -1,6 +1,5 @@
 import React from 'react';
-import { IBaseProdItem } from '../../pages';
-import { SelectInput } from './select-input';
+import { IBaseProdItem } from '../pages';
 
 export const ProductItem = (props) => {
   const prodItem: IBaseProdItem = props.prodItem;

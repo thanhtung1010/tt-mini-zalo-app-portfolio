@@ -6,4 +6,6 @@ export * from './setting-list';
 export * from './setting-list-item';
 export * from './container-prod';
 
-export * from './common'
+export * from './icon';
+export * from './tag-type';
+export * from './prod-item';
