@@ -8,8 +8,8 @@ import './assets/scss/main.scss';
 import App from './components/app';
 import appConfig from '../app-config.json';
 
-if (!window.APP_CONFIG) {
-  window.APP_CONFIG = appConfig;
+if (!(window as any).APP_CONFIG) {
+  (window as any).APP_CONFIG = appConfig;
 }
 
 // Mount React App

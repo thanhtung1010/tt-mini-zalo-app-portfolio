@@ -169,7 +169,6 @@ export const ShopingPage: React.FunctionComponent = () => {
   const goToProductType = (type: string) => {
     const htmlTypeId = 'tt-type-' + type.toLowerCase();
     const elm = document.getElementById(htmlTypeId);
-    console.log(elm)
     if (elm) {
       elm.scrollIntoView();
     }
