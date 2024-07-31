@@ -1,12 +1,12 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import { userInfo } from "zmp-sdk";
 import { userState } from '../state';
 import UserCard from '../components/user-card';
 import { Icon, SettingList, SettingListItem } from '../components';
+import { IZaloUser } from '../interfaces';
 
 export const SettingPage: React.FunctionComponent = () => {
-  const user = useRecoilValue<userInfo>(userState);
+  const user = useRecoilValue<IZaloUser>(userState);
   return (
     <main className='tt-page tt-setting'>
       <section className="tt-setting-container tt-setting-user">

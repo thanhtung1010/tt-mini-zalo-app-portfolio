@@ -1,7 +1,4 @@
 import React from 'react';
-import { useRecoilValue } from 'recoil';
-import { userInfo } from "zmp-sdk";
-import { userState } from '../state';
 import { ContainerProduct, Icon, TagType } from '../components';
 
 export interface IBaseType {
