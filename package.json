@@ -20,6 +20,7 @@
   "scripts": {
     "start": "zmp start",
     "deploy": "zmp deploy",
+    "mkdir-package": "node scripts/mkdir-package.js",
     "build-lib": "rollup -c --bundleConfigAsCjs"
   },
   "dependencies": {
