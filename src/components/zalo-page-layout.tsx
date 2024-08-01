@@ -1,11 +1,15 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import NavigationBar from "./navigation-bar";
 import { useSetRecoilState } from "recoil";
 import { userState } from "../state";
 import { getUserInfo } from "zmp-sdk";
 
-const ZaloPageLayout = (props: any) => {
-  let loginError: any = undefined;
+interface IZaloPageLayoutProps {
+  children: ReactNode;
+}
+
+const ZaloPageLayout: React.FunctionComponent<IZaloPageLayoutProps> = ({children}) => {
+  let loginError: undefined | Record<string, unknown> = undefined;
   const setUser = useSetRecoilState(userState);
 
   getUserInfo()
@@ -28,7 +32,7 @@ const ZaloPageLayout = (props: any) => {
         <p>{loginError || {}}</p>
       </div>
     : <section className="tt-pagelayout">
-        {props.children}
+        {children}
         <NavigationBar></NavigationBar>
       </section>
    );

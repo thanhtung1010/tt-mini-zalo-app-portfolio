@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil';
 import { SettingPage, ShopingPage } from '../pages';
 import ZaloPageLayout from './zalo-page-layout';
 
-const MyApp = () => {
+const MyApp: React.FunctionComponent = () => {
   return (
     <RecoilRoot>
       <BrowserRouter>

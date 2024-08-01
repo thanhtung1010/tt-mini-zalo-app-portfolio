@@ -1,8 +1,11 @@
 import React from 'react';
 import { IBaseProdItem } from '../pages';
 
-export const ProductItem = (props) => {
-  const prodItem: IBaseProdItem = props.prodItem;
+interface IProductItemProps {
+  prodItem: IBaseProdItem;
+}
+
+export const ProductItem: React.FunctionComponent<IProductItemProps> = ({prodItem}) => {
   return (
     <section className='tt-shoping-prods-wrap-item'>
       <section className='tt-shoping-prods-item'>

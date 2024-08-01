@@ -9,7 +9,7 @@ function checkActiveRoute(path: string) {
   const routeKey: string[] = Object.keys(ROUTE);
   for (let i = 0; i < routeKey.length; i++) {
     const route = ROUTE[routeKey[i]];
-    const element: HTMLButtonElement = document.getElementById('navbar-' + route) as any;
+    const element: HTMLButtonElement | null = document.getElementById('navbar-' + route) as HTMLButtonElement | null;
     if (element) {
       const _class = element.className;
       if (path.includes(route)) {
@@ -26,7 +26,7 @@ function goToURL(path: string, navigate: NavigateFunction) {
   checkActiveRoute(path);
 }
 
-const NavigationBar = () => {
+const NavigationBar: React.FunctionComponent = () => {
   const navigate = useNavigate();
   const location = useLocation();
 

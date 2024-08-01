@@ -2,8 +2,11 @@ import React from 'react';
 import { IBaseProd } from '../pages';
 import { ProductItem } from '.';
 
-export const ContainerProduct = (props) => {
-  const prod: IBaseProd = props.prod;
+interface IContainerProductProps {
+  prod: IBaseProd;
+}
+
+export const ContainerProduct: React.FunctionComponent<IContainerProductProps> = ({prod}) => {
   return (
     <section className='tt-shoping-prods-wrapper' id={'tt-type-' + prod.type.toLowerCase()}>
       <h4 className='tt-shoping-prods-title'>{prod.name}</h4>

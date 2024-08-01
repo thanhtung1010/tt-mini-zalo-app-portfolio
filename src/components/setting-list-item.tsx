@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-export const SettingListItem = (props) => {
-  const {children, suffix} = props;
+interface IProductItemProps {
+  children: ReactNode | string;
+  suffix: ReactNode;
+}
+
+export const SettingListItem: React.FunctionComponent<IProductItemProps> = ({children, suffix}) => {
   return (
     <li className='tt-setting-list-item'>
       <div className='tt-setting-list-item-right'>
