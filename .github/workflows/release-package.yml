@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: 16
 
+      - name: INSTALL
+        run: npm i
+
       - name: RUN CI
         run: npm ci
 
@@ -41,8 +44,11 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
 
-      - name: RUN CI
-        run: npm ci
+      - name: INSTALL
+        run: npm i
+
+      - name: ENROLL
+        run: npm run build-lib
 
       - name: PUBLISH
         run: npm publish
