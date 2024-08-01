@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Icon } from '.';
 
-export const TagType = (props) => {
-  const {children, suffix, onClick, iconWidth} = props;
+interface ITagTypeProps {
+  children: ReactNode;
+  suffix: string;
+  onClick(): void;
+  iconWidth: string;
+}
+
+export const TagType: React.FunctionComponent<ITagTypeProps> = ({children, suffix, onClick, iconWidth}) => {
 
   const onClickTag = () => {
     onClick();

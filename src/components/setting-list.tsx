@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-export const SettingList = (props) => {
+interface ISettingListProps {
+  children: ReactNode;
+}
+
+export const SettingList: React.FunctionComponent<ISettingListProps> = ({children}) => {
   return (
-    <ul className='tt-setting-list'>{props.children}</ul>
+    <ul className='tt-setting-list'>{children}</ul>
   );
 };
