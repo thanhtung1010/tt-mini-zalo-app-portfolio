@@ -1,8 +1,11 @@
 {
-  "name": "tt-mini-zalo-app-portfolio",
+  "name": "mini-app-libs",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/thanhtung1010"
+  },
   "private": true,
   "version": "1.0.0",
-  "description": "Zalo Mini App",
+  "description": "Zalo Mini Libs",
   "repository": "",
   "license": "UNLICENSED",
   "browserslist": [
