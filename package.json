@@ -1,9 +1,9 @@
 {
   "name": "mini-app-libs",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/thanhtung1010"
+    "@thanhtung1010:registry": "https://npm.pkg.github.com"
   },
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "description": "Zalo Mini Libs",
   "repository": "",
