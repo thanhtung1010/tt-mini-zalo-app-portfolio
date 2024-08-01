@@ -3,7 +3,7 @@ name: mini-app-libs
 on:
   push:
     branches:
-      - deploy/libs
+      - deploy/lib
 
 jobs:
   build:
