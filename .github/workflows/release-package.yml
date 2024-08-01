@@ -31,9 +31,6 @@ jobs:
       - name: ENROLL
         run: npm run build-lib
 
-      - name: MKDIR PACKAGE
-        run: npm run mkdir-package
-
       - name: PUBLISH
         run: npm publish ./dist
         env:
