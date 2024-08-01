@@ -6,30 +6,8 @@ on:
       - deploy/lib
 
 jobs:
-  build:
-    name: "RUN TEST"
-    runs-on: ubuntu-latest
-    steps:
-      - name: CHECKOUT
-        uses: actions/checkout@v4
-
-      - name: NODE
-        uses: actions/setup-node@v4
-        with:
-          node-version: 16
-
-      - name: INSTALL
-        run: npm i
-
-      - name: RUN CI
-        run: npm ci
-
-      - name: RUN TEST
-        run: npm test
-
   publish-gpr:
     name: "RELEASE PACKAGE"
-    needs: build
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -46,6 +24,9 @@ jobs:
 
       - name: INSTALL
         run: npm i
+
+      - name: RUN CI
+        run: npm ci
 
       - name: ENROLL
         run: npm run build-lib
