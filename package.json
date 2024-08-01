@@ -3,7 +3,7 @@
   "publishConfig": {
     "@thanhtung1010:registry": "https://npm.pkg.github.com"
   },
-  "private": false,
+  "private": true,
   "version": "1.0.0",
   "description": "Zalo Mini Libs",
   "repository": "",
